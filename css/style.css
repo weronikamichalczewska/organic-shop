@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  background: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* --------------- Navbar ---------------- */
+.info{
+  color: white;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar{
+  background-color: lightgreen;
+}
+.brand{
+  font-weight: 800;
+  text-transform: uppercase;
+  color:#222;
+}
+.nav-icon i{
+  color:black;
+  font-size: 1.7rem;
+}
+.user-btn{
+  padding-right:60px ;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  padding-right: 40px;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: green;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #fff;
+  margin-right: 40px;
+}
+/* --------------- End of Navbar ---------------- */
+  /* --------------- Hero ---------------- */
+  .hero {
+    min-height: 732px;
+    background: url("../images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+  }
+  .banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+    opacity: 0.9;
+  }
+  .banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    background: lightgreen;
+    color: #222;
+    border: 1px solid lightgreen;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .banner-btn:hover {
+    background: transparent;
+    color: green;
+  }
+  /* --------------- End of Hero ---------------- */
+  /* --------------- Products ---------------- */
+  
+  .section-title h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+  }
+  .img-container{
+    position: relative;
+    max-width: 450px;
+    justify-content: space-around;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    margin: 20px auto;
+  }
+h3{
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+}
+h4{
+  text-align: center;
+  color: rgb(107, 214, 107)
+}
+.add-cart {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  background: lightgreen;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  transform: translateX(101%);
+  cursor: pointer;
+  color: #222;
+}
+.img-container:hover .add-cart {
+  transform: translateX(0);
+}
+.add-cart:hover {
+  color: white;
+  text-decoration: none;
+}
+.img-container:hover .product-img {
+  opacity: 0.5;
+}
+
+/* --------------- End of Products ---------------- */
+/* --------------- Timer ---------------- */
+.ftco-section {
+  padding: 6em 0;
+  position: relative;
+}
+.section-add{
+  min-height: 422px;
+}
+.img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 602px;
+  margin-top: 40px;
+}
+.heading-section {
+  position: relative;
+}
+
+.heading-section .subheading {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  color: #82ae46;
+}
+.heading-section h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", Arial, sans-serif;
+}
+.deal-of-the-day h3 {
+  font-size: 30px;
+  font-family: "Lora", Georgia, serif;
+  text-align: left;
+}
+.deal-of-the-day h3 a {
+  color: #82ae46;
+  text-decoration: none;
+}
+.price >  a{
+  font-weight: 500;
+  font-size: 24px;
+  color: #82ae46;
+  justify-content: center;
+  text-decoration: none;
+}
+ p{
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+ }
+ /* --------------- End of Timer ---------------- */
+ /* --------------- Customers ---------------- */
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ /* --------------- End of Customers ---------------- */
+ /*Mouse*/
+ .mouse {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.mouse-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: #82ae46;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.mouse-wheel {
+  height: 30px;
+  margin: 2px auto 0;
+  display: block;
+  width: 30px;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+  color: #fff;
+  font-size: 20px;
+}
+/* Footer */
+.ftco-footer {
+  font-size: 14px;
+  padding: 7em 0;
+  color: #000000;
+}
+.ftco-footer .ftco-footer-widget h2 {
+  color: green;
+  margin-bottom: 20px;
+  font-family: "Lato" sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.ftco-footer .ftco-footer-widget ul li {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+.list-unstyled> li> a {
+  padding-left: 0;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.block-23 ul li .icon {
+  width: 40px;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.block-23 ul li .icon, .block-23 ul li .text {
+  display: table-cell;
+  vertical-align: top;
+}
+.ftco-footer-widget p {
+  color: black;
+}
+.block-23 ul li {
+  list-style: none;
+  display: inline-flex;
+}
+.block-23 ul li span {
+  margin-left: 10px;
+  margin-top: 5px;
+  align-items: center;
+  display: flex;
+}
