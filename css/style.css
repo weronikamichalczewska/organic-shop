@@ -107,7 +107,7 @@ body {
     margin-top: 40px;
     text-align: center;
     font-size: 48px;
-    margin-bottom: 5rem;
+    margin-bottom: 180px;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
   }
@@ -120,7 +120,7 @@ body {
     margin: 20px auto;
   }
 h3{
-  font-size: 24px;
+  font-size: 28px;
   text-transform: capitalize;
   text-align: center;
 }
@@ -214,6 +214,17 @@ h4{
  }
  /* --------------- End of Timer ---------------- */
  /* --------------- Customers ---------------- */
+ .item{
+   position: relative;
+ }
+ .img-responsive{
+  position: absolute;
+  border-radius: 50px;
+  width: 100px !important;
+  height: 100px;
+  margin-right: 15px;
+  top: -70px;
+ }
  .dot {
   cursor: pointer;
   height: 15px;
@@ -223,6 +234,9 @@ h4{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+.fa-star{
+  color: lightgreen;
 }
  /* --------------- End of Customers ---------------- */
 /* --------------- Footer ---------------- */
