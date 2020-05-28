@@ -12,9 +12,10 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-  
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
   <body>
     <header>
       <div class="py-1 bg-primary bg-success info">
@@ -39,7 +40,7 @@
         </div>
       </div>
       <!-- navbar -->
-      
+
       <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
         <!-- logo -->
@@ -86,13 +87,13 @@
     <!-- end of navbar-->
     <!-- hero -->
     <section class="hero">
-      <div class="banner">
+      <div class="banner animate-top">
         <h1 class="banner-title">Organic Store</h1>
         <button class="banner-btn">shop now</button>
       </div>
     </section>
     <!-- end of hero -->
-    
+
     <!--products-->
 	<section class="products-section">
 		<div class="section-title">
@@ -101,28 +102,28 @@
 		<div class="container">
       <div class="row">
 
-        <div class="col-md-6 img-container">
+        <div class="col-md-6 img-container animate-left">
 					<img src="./images/peperItem.jpg" alt="product" data-id="1" class="product-img img-fluid">
           <h3>Peper</h3>
           <h4>$15</h4>
           <a href="#" class="add-cart cart1">Add to Cart</a>
         </div>
 
-        <div class="col-md-6 img-container ">
+        <div class="col-md-6 img-container animate-right">
 					<img src="./images/strawberriesItem.jpg" alt="product" data-id="2" class="product-img img-fluid">
 					<h3>Strawberries</h3>
           <h4>$10</h4>
           <a href="#" class="add-cart cart2">Add to Cart</a>
         </div>
 
-        <div class="col-md-6 img-container">
+        <div class="col-md-6 img-container animate-left">
 					<img src="./images/greenBeansItem.jpg" alt="product" data-id="3" class="product-img img-fluid">
 					<h3>Green Beans</h3>
           <h4>$5</h4>
           <a href="#" class="add-cart cart3">Add to Cart</a>
         </div>
-        
-        <div class="col-md-6 img-container">
+
+        <div class="col-md-6 img-container animate-right">
 					<img src="./images/juiceItem.jpg" alt="product" data-id="4" class="product-img img-fluid">
 					<h3>Juice</h3>
           <h4>$20</h4>
@@ -136,7 +137,7 @@
   <section class="ftco-section img" style="background-image: url(images/bg_3.jpg);">
     <div class="container">
       <div class="row justify-content-end section-add">
-        <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
+        <div class="col-md-6 heading-section deal-of-the-day animate-top">
           <span class="subheading">Best Price For You</span>
           <h2 class="mb-4">Deal of the day</h2>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -149,7 +150,7 @@
             <div class="time pl-3" id="seconds"></div>
           </div>
         </div>
-      </div>   		
+      </div>
     </div>
   </section>
   <!-- end of timer -->
@@ -163,7 +164,6 @@
           </div>
           <div class="col-md-4 col-sm-4 float-left">
             <div class="item">
-                 
                  <div class="tst-author">
                       <h4>Jackson</h4>
                       <span>Shopify Developer</span>
@@ -181,12 +181,11 @@
 
        <div class="col-md-4 col-sm-4 float-left">
             <div class="item">
-                
                  <div class="tst-author">
                       <h4>Camila</h4>
                       <span>Marketing Manager</span>
                  </div>
-                 <p>Trying something new is exciting! Thanks for the amazing law course and the great teacher who was able to make it interesting.</p>
+                 <p>Trying something new is exciting! Thanks for the amazing law course and the great teacher who was able to make it interesting. Donec erat libero, blandit vitae arcu eu.</p>
                  <div class="tst-rating">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -197,7 +196,6 @@
 
        <div class="col-md-4 col-sm-4 float-left">
             <div class="item">
-                 
                  <div class="tst-author">
                       <h4>Barbie</h4>
                       <span>Art Director</span>
@@ -218,7 +216,7 @@
   </section>
 <!--end of customers-->
 <!-- newsletter -->
-<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light newsletter">
+<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light newsletter animate-left">
   <div class="container py-4">
     <div class="row d-flex justify-content-center py-5">
       <div class="col-md-6">
@@ -237,7 +235,7 @@
   </div>
 </section>
 <!-- end of newsletter -->
-<footer class="ftco-footer ftco-section">
+<footer class="ftco-footer ftco-section animate-bottom">
   <div class="container">
     <div class="row mb-5">
       <div class="col-md">
@@ -302,5 +300,6 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/cart.js"></script>
+<script src="js/animate.js"></script>
   </body>
 </html>

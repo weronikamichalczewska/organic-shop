@@ -9,6 +9,7 @@ body {
   color: black;
   background: #fff;
   font-family: "Lato", sans-serif;
+  overflow-x:hidden;
 }
 
 .container {
@@ -77,6 +78,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeDown .5s forwards;
+    animation-delay: 2s;
   }
   .banner-btn {
     padding: 1rem 3rem;
@@ -88,6 +92,9 @@ body {
     border: 1px solid lightgreen;
     transition: all 0.3s linear;
     cursor: pointer;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: 2s;
   }
   .banner-btn:hover {
     background: transparent;
@@ -317,3 +324,31 @@ h4{
   padding: 10px 10px;
 }
 /* --------------- End of Footer ---------------- */
+/* --------------- Animations ---------------- */
+@keyframes fadeUp{
+  0%{
+    transform: translateY(4rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDown{
+  0%{
+    transform: translateY(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
