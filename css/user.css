@@ -94,6 +94,7 @@ body {
 .form-control label{
     display: inline-block;
     margin-bottom: 5px;
+    color: black;
 }
 .form-control input{
     border: 2px solid #f0f0f0;
@@ -148,7 +149,16 @@ body {
     width: 100%;
     margin-top: 30px;
     cursor: pointer;
+    outline: none;
 }
+.form button:hover{
+    background: transparent;
+    color: green;
+}
+#email, #password{
+  outline: none;
+}
+
 /* --------------- End of Sign in ---------------- */
 @keyframes fadeDown{
   0%{

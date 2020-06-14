@@ -91,7 +91,6 @@ function totalCost(product){
     }else {
         localStorage.setItem('totalCost', product.price);
     }
-
 }
 
 function displayCart(){
@@ -135,4 +134,5 @@ function displayCart(){
 }
 onLoadCartNumbers();
 displayCart();
+
 

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   color: black;
@@ -99,6 +100,7 @@ body {
   .banner-btn:hover {
     background: transparent;
     color: green;
+    outline: none;
   }
   /* --------------- End of Hero ---------------- */
   /* --------------- Products ---------------- */
@@ -293,7 +295,7 @@ h4{
 }
 /* --------------- Newsletter ---------------- */
 .newsletter{
-  background-color: #f7f6f2 !important;
+  background-color: #e7e7e5 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-top: 100px;
@@ -337,6 +339,7 @@ h4{
 .form-control{
   padding: 10px 10px;
 }
+
 /* --------------- End of Footer ---------------- */
 /* --------------- Animations ---------------- */
 @keyframes fadeUp{
@@ -366,3 +369,51 @@ h4{
   }
 }
 
+/*Media queries*/
+@media screen and (max-width: 991px){
+  .img-responsive{
+    left: -50px;
+  }
+}
+@media screen and (max-width: 765px){
+  .img-responsive{
+    left: 10px;
+    top: -125px;
+  }
+}
+@media screen and (max-width: 575px){
+  .img-responsive{
+    left: 325px;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 499px){
+  .img-responsive{
+    left: 280px;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 450px){
+  .img-responsive{
+    left: 250px;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 400px){
+  .img-responsive{
+    left: 210px;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 360px){
+  .img-responsive{
+    left: 190px;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 345px){
+  .img-responsive{
+    left: 185x;
+    top: -40px;
+  }
+}
