@@ -91,7 +91,6 @@ body {
     letter-spacing: 0.1rem;
     font-size: 1rem;
     background: lightgreen;
-    color: #222;
     border: 1px solid lightgreen;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -403,8 +402,24 @@ h4{
 }
 @media screen and (max-width: 400px){
   .img-responsive{
-    left: 210px;
+    left: 225px;
     top: -40px;
+  }
+  .navbar-brand{
+    margin-right: 0 !important;
+  }
+  .navbar-toggler{
+    padding: 5px !important;
+    margin-right: 5px;
+  }
+  .user-btn{
+    padding-right: 0 !important;
+  }
+  .cart-btn{
+    padding-right: 10px;
+  }
+  .cart-items{
+    right: -40px;
   }
 }
 @media screen and (max-width: 360px){
