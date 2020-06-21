@@ -28,7 +28,12 @@ body {
   font-size: 14px;
   font-family: "Lato", sans-serif;
 }
-
+#logo{
+  text-align: center;
+  padding: 0;
+  position: relative;
+  margin: 10px 0 10px;
+}
 .navbar{
   background-color: lightgreen;
 }
@@ -41,13 +46,9 @@ body {
   color:black;
   font-size: 1.7rem;
 }
-.user-btn{
-  padding-right:60px ;
-}
 .cart-btn {
   position: relative;
   cursor: pointer;
-  padding-right: 40px;
 }
 .cart-items {
   position: absolute;
@@ -57,7 +58,6 @@ body {
   padding: 0 5px;
   border-radius: 30%;
   color: #fff;
-  margin-right: 40px;
 }
 /* --------------- End of Navbar ---------------- */
   /* --------------- Hero ---------------- */
@@ -405,32 +405,34 @@ h4{
     left: 225px;
     top: -40px;
   }
-  .navbar-brand{
-    margin-right: 0 !important;
-  }
-  .navbar-toggler{
-    padding: 5px !important;
-    margin-right: 5px;
-  }
-  .user-btn{
-    padding-right: 0 !important;
+  #logo{
+    margin: 0px 55px 10px 50px;
   }
   .cart-btn{
-    padding-right: 10px;
-  }
-  .cart-items{
-    right: -40px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 360px){
   .img-responsive{
-    left: 190px;
+    left: 200px;
     top: -40px;
+  }
+  #logo{
+    margin: 10px 55px 10px 50px;
+  }
+  .cart-btn{
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 345px){
   .img-responsive{
     left: 185x;
     top: -40px;
+  }
+  #logo{
+    margin: 10px 55px 10px 50px;
+  }
+  .cart-btn{
+    margin-right: 20px;
   }
 }

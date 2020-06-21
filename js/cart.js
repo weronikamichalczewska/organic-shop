@@ -103,24 +103,24 @@ function displayCart(){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class="product">
+            <div class="product col-xs-3 col-xs-pd">
                 <i class="fas fa-trash-alt remove-item"></i>
                 <img src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
-            <div class="price">$${item.price},00</div>
-            <div class="quantity">
+            <div class="price col-xs-3 col-xs-pd">$${item.price},00</div>
+            <div class="quantity col-xs-3 col-xs-pd">
                 <i class="fas fa-minus minus-item"></i>
                 <span>${item.inCart}</span>
                 <i class="fas fa-plus plus-item"></i>
             </div>
-            <div class="total">
+            <div class="total col-xs-3 col-xs-pd">
                 $${item.inCart * item.price},00
             </div>
             `
         });
         productContainer.innerHTML += `
-            <div class="basketTotalContainer">
+            <div class="basketTotalContainer col-xs-3">
             <h4 class="basketTotalTitle>
                 Basket total
             </h4>

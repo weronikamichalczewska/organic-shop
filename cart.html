@@ -3,7 +3,7 @@
   <head>
     <title>Organic Store</title>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/cart.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -13,64 +13,63 @@
   <body>
     <header>
       <!-- navbar -->
-      <nav class="navbar navbar-light navbar-expand-md">
-        <!-- logo -->
-        <a class="navbar-brand" href="index.html"><span class="fas fa-seedling d-inline-block"></span>
-          <span class="mr-1 brand">Organic Store</span>
-        </a>
-        <!-- end of logo -->
-        <button class="navbar-toggler" type="button" data-toggle="colappse" data-target="#mainmenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <div id="logo"><a class="navbar-brand" href="index.html">
+            <a class="navbar-brand mr-1 brand" href="index.html">
+              <span class="fas fa-seedling d-inline-block"></span>Organic Store
+            </a>
+          </div>
 
-        <div class="collapse navbar-collapse" id="mainmenu">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Juices</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Salads</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Fruits</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="user-btn">
+          <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        
+        <div class="user-btn ml-3">
           <a href="user.html"><span class="nav-icon">
             <i class="fas fa-user"></i>
           </span></a>
         </div>
-        <!-- cart btn -->
-        <div class="cart-btn">
-          <span class="nav-icon">
+        <!-- cart -->
+        <div class="cart-btn ml-3">
+          <a href="cart.html"><span class="nav-icon">
             <i class="fas fa-cart-plus"></i>
           </span>
-          <div class="cart-items">0</div>
+          <div class="cart-items">0</div></a>
         </div>
-      </nav>
-    </header>
-    <!-- end of navbar -->
+      </div>
+  </div>
+</nav>
+  <!-- END nav -->
     <!-- cart page -->
     <div class="container">
       <div class="row">
-      <div class="products-container col-md-12">
-        <div class="product-header">
-          <h5 class="product-title">PRODUCT</h5>
-          <h5 class="price">PRICE</h5>
-          <h5 class="quantity">QUANTITY</h5>
-          <h5 class="total">TOTAL</h5>
+      <div class="products-container col-md-12 col-xs-12">
+        <div class="product-header col-xs-3">
+          <h5 class="product-title col-xs-3">PRODUCT</h5>
+          <h5 class="price col-xs-3">PRICE</h5>
+          <h5 class="quantity col-xs-3">QUANTITY</h5>
+          <h5 class="total col-xs-3">TOTAL</h5>
         </div>
-        <div class="products">
+        <div class="products col-xs-3">
 
         </div>
       </div>
     </div>
   </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="js/cart.js"></script>
 </body>
 </html>

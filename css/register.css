@@ -46,13 +46,9 @@ body {
     color:black;
     font-size: 1.7rem;
   }
-  .user-btn{
-    padding-right:60px ;
-  }
   .cart-btn {
     position: relative;
     cursor: pointer;
-    padding-right: 40px;
   }
   .cart-items {
     position: absolute;
@@ -62,7 +58,6 @@ body {
     padding: 0 5px;
     border-radius: 30%;
     color: #fff;
-    margin-right: 40px;
   }
   /* --------------- End of Navbar ---------------- */
 .v-container{
@@ -169,5 +164,31 @@ body {
   100%{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/*Media queries*/
+@media screen and (max-width: 400px){
+  #logo{
+    margin: 0px 55px 10px 70px;
+  }
+  .cart-btn{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 360px){
+  #logo{
+    margin: 10px 55px 10px 70px;
+  }
+  .cart-btn{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 345px){
+  #logo{
+    margin: 10px 55px 10px 70px;
+  }
+  .cart-btn{
+    margin-right: 20px;
   }
 }
