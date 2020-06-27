@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
     checkInputs();
 });
 
-function checkInputs(){
+const checkInputs = () => {
     // get the values from the inputs
    const emailValue = email.value.trim();
    const passwordValue = password.value.trim();
@@ -29,7 +29,7 @@ function checkInputs(){
    }
 }
 
-function setErrorFor(input, message){
+const setErrorFor = (input, message) => {
     const formControl = input.parentElement; // .form-control
     const small = formControl.querySelector('small');
 
@@ -40,15 +40,12 @@ function setErrorFor(input, message){
     formControl.className = 'form-control error';
 }
 
-function setSuccessFor(input){
+const setSuccessFor = input => {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
 
-function isEmail(email){
-    return  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+const isEmail = email => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 
-function checkPassword(password){
-    return /^[A-Za-z]\w{7,14}$/.test(password);
-}
+const checkPassword = password => /^[A-Za-z]\w{7,14}$/.test(password);
+
