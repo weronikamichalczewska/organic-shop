@@ -1,6 +1,6 @@
-let carts = document.querySelectorAll('.add-cart');
-let cartContent = document.querySelector('.products');
-let products = [
+const carts = document.querySelectorAll('.add-cart');
+const cartContent = document.querySelector('.products');
+const products = [
     {
         name: 'Peper',
         tag: 'peperItem',
@@ -9,8 +9,8 @@ let products = [
         "id": "1"
     },
     {
-        name: 'Strawberries',
-        tag: 'strawberriesItem',
+        name: 'Apple',
+        tag: 'appleItem',
         price: 10,
         inCart: 0,
         "id": "2"
@@ -38,17 +38,17 @@ for(let i=0; i < carts.length; i++){
     });
 }
 
-function onLoadCartNumbers(){
+const onLoadCartNumbers = () => {
     let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers){
         document.querySelector('.cart-items').textContent = productNumbers;
     }
 }
-function cartNumbers(product){
+const cartNumbers = product => {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
-    
+
     if(productNumbers){
         localStorage.setItem('cartNumbers',productNumbers+1);
         document.querySelector('.cart-items').textContent = productNumbers+1;
@@ -59,7 +59,7 @@ function cartNumbers(product){
     setItems(product);
 }
 
-function setItems(product){
+const setItems = product => {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
@@ -82,9 +82,9 @@ function setItems(product){
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
-function totalCost(product){
+const totalCost = product => {
     let cartCost = localStorage.getItem('totalCost');
-    
+
     if(cartCost != null){
         cartCost = parseInt(cartCost);
         localStorage.setItem('totalCost', cartCost + product.price);
@@ -93,12 +93,12 @@ function totalCost(product){
     }
 }
 
-function displayCart(){
+const displayCart = () => {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products');
     let cartCost = localStorage.getItem('totalCost');
-    
+
     if(cartItems && productContainer){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -106,7 +106,7 @@ function displayCart(){
             <div class="product col-xs-3 col-xs-pd">
                 <i class="fas fa-trash-alt remove-item"></i>
                 <img src="./images/${item.tag}.jpg">
-                <span>${item.name}</span>
+                <span class="mr-4">${item.name}</span>
             </div>
             <div class="price col-xs-3 col-xs-pd">$${item.price},00</div>
             <div class="quantity col-xs-3 col-xs-pd">
@@ -129,9 +129,10 @@ function displayCart(){
                 </br></br>
                 $${cartCost},00
             </h4>
-        ` 
+        `
     }
 }
+
 onLoadCartNumbers();
 displayCart();
 

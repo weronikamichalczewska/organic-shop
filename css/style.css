@@ -14,36 +14,29 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 /* --------------- Navbar ---------------- */
-.info{
+.info {
   color: white;
   font-size: 14px;
   font-family: "Lato", sans-serif;
 }
-#logo{
+#logo {
   text-align: center;
   padding: 0;
   position: relative;
   margin: 10px 0 10px;
 }
-.navbar{
+.navbar {
   background-color: lightgreen;
+  padding: 0 !important;
 }
-.brand{
+.brand {
   font-weight: 800;
   text-transform: uppercase;
-  color:#222;
+  color: #222;
 }
-.nav-icon i{
-  color:black;
+.nav-icon i {
+  color: black;
   font-size: 1.7rem;
 }
 .cart-btn {
@@ -60,74 +53,74 @@ body {
   color: #fff;
 }
 /* --------------- End of Navbar ---------------- */
-  /* --------------- Hero ---------------- */
-  .hero {
-    min-height: 732px;
-    background: url("../images/hero.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.1rem;
-  }
-  .banner {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    padding: 2rem;
-    opacity: 0.9;
-  }
-  .banner-title {
-    font-size: 3.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-    opacity: 0;
-    animation: fadeDown .5s forwards;
-    animation-delay: 2s;
-  }
-  .banner-btn {
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    background: lightgreen;
-    border: 1px solid lightgreen;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    opacity: 0;
-    animation: fadeUp .5s forwards;
-    animation-delay: 2s;
-  }
-  .banner-btn:hover {
-    background: transparent;
-    color: green;
-    outline: none;
-  }
-  /* --------------- End of Hero ---------------- */
-  /* --------------- Products ---------------- */
-  
-  .section-title h2 {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 180px;
-    text-transform: capitalize;
-    letter-spacing: 0.1rem;
-  }
-  .img-container{
-    position: relative;
-    max-width: 450px;
-    justify-content: space-around;
-    overflow: hidden;
-    border: 1px solid #f0f0f0;
-    margin: 20px auto;
-  }
-h3{
+/* --------------- Hero ---------------- */
+.hero {
+  min-height: 732px;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+  opacity: 0.9;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeDown 0.5s forwards;
+  animation-delay: 2s;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: lightgreen;
+  border: 1px solid lightgreen;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeUp 0.5s forwards;
+  animation-delay: 2s;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: green;
+  outline: none;
+}
+/* --------------- End of Hero ---------------- */
+/* --------------- Products ---------------- */
+
+.section-title h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 180px;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.img-container {
+  position: relative;
+  max-width: 450px;
+  justify-content: space-around;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  margin: 20px auto;
+}
+h3 {
   font-size: 28px;
   text-transform: capitalize;
   text-align: center;
 }
-h4{
+h4 {
   text-align: center;
   color: rgb(107, 214, 107);
 }
@@ -163,10 +156,10 @@ h4{
   padding: 6em 0;
   position: relative;
 }
-.section-add{
+.section-add {
   min-height: 422px;
 }
-.img{
+.img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,34 +194,34 @@ h4{
   color: #82ae46;
   text-decoration: none;
 }
-.price >  a{
+.price > a {
   font-weight: 500;
   font-size: 24px;
   color: #82ae46;
   justify-content: center;
   text-decoration: none;
 }
- p{
+p {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.8;
   font-weight: 400;
   color: gray;
- }
- /* --------------- End of Timer ---------------- */
- /* --------------- Customers ---------------- */
- .item{
-   position: relative;
- }
- .img-responsive{
+}
+/* --------------- End of Timer ---------------- */
+/* --------------- Customers ---------------- */
+.item {
+  position: relative;
+}
+.img-responsive {
   position: absolute;
   border-radius: 50px;
   width: 100px !important;
   height: 100px;
   margin-right: 15px;
   top: -70px;
- }
- .dot {
+}
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -238,10 +231,10 @@ h4{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.fa-star{
+.fa-star {
   color: lightgreen;
 }
- /* --------------- End of Customers ---------------- */
+/* --------------- End of Customers ---------------- */
 /* --------------- Footer ---------------- */
 .ftco-footer {
   font-size: 14px;
@@ -264,7 +257,7 @@ h4{
   margin: 0 10px 0 0;
   display: inline-block;
 }
-.list-unstyled> li> a {
+.list-unstyled > li > a {
   padding-left: 0;
   list-style: none;
   color: black;
@@ -277,7 +270,8 @@ h4{
   padding-top: 2px;
 }
 
-.block-23 ul li .icon, .block-23 ul li .text {
+.block-23 ul li .icon,
+.block-23 ul li .text {
   display: table-cell;
   vertical-align: top;
 }
@@ -295,20 +289,20 @@ h4{
   display: flex;
 }
 /* --------------- Newsletter ---------------- */
-.newsletter{
+.newsletter {
   background-color: #e7e7e5 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-top: 100px;
 }
-.email{
-  color:gray;
+.email {
+  color: gray;
   font-size: 14px;
   line-height: 1.8;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
 }
-.subcribe{
+.subcribe {
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
@@ -337,26 +331,26 @@ h4{
   background: rgb(107, 214, 107) !important;
   cursor: pointer;
 }
-.form-control{
+.form-control {
   padding: 10px 10px;
 }
 
 /* --------------- End of Footer ---------------- */
 /* --------------- Animations ---------------- */
-@keyframes fadeUp{
-  0%{
+@keyframes fadeUp {
+  0% {
     transform: translateY(4rem);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-@keyframes fadeDown{
-  0%{
+@keyframes fadeDown {
+  0% {
     transform: translateY(-1rem);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -371,68 +365,74 @@ h4{
 }
 
 /*Media queries*/
-@media screen and (max-width: 991px){
-  .img-responsive{
+@media screen and (max-width: 991px) {
+  .img-responsive {
     left: -50px;
   }
 }
-@media screen and (max-width: 765px){
-  .img-responsive{
+@media screen and (max-width: 765px) {
+  .img-responsive {
     left: 10px;
     top: -125px;
   }
 }
-@media screen and (max-width: 575px){
-  .img-responsive{
+@media screen and (max-width: 575px) {
+  .img-responsive {
     left: 325px;
     top: -40px;
   }
 }
-@media screen and (max-width: 499px){
-  .img-responsive{
+@media screen and (max-width: 499px) {
+  .img-responsive {
     left: 280px;
     top: -40px;
   }
 }
-@media screen and (max-width: 450px){
-  .img-responsive{
+@media screen and (max-width: 450px) {
+  .img-responsive {
     left: 250px;
     top: -40px;
   }
+  #logo {
+    margin: 0px 80px 10px 100px;
+  }
+  .cart-btn {
+    margin-right: 20px;
+  }
 }
-@media screen and (max-width: 400px){
-  .img-responsive{
+@media screen and (max-width: 400px) {
+  .img-responsive {
     left: 225px;
     top: -40px;
   }
-  #logo{
-    margin: 0px 55px 10px 50px;
+  #logo {
+    margin: 0px 55px 10px 90px;
   }
-  .cart-btn{
+  .cart-btn {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 360px){
-  .img-responsive{
+@media screen and (max-width: 360px) {
+  .img-responsive {
     left: 200px;
     top: -40px;
   }
-  #logo{
-    margin: 10px 55px 10px 50px;
+  #logo {
+    margin: 10px 55px 10px 80px;
   }
-  .cart-btn{
+  .cart-btn {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 345px){
-  .img-responsive{
+@media screen and (max-width: 345px) {
+  .img-responsive {
     left: 185x;
     top: -40px;
   }
-  #logo{
+  #logo {
     margin: 10px 55px 10px 50px;
   }
-  .cart-btn{
+  .cart-btn {
     margin-right: 20px;
   }
 }
