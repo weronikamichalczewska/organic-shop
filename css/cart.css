@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   color: black;
@@ -113,7 +114,20 @@ body {
 .basketTotal {
   width: 10%;
 }
-
+.empty-cart-btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.empty-cart-btn:hover {
+  background: transparent;
+  color: green;
+  outline: none;
+}
 /*Media queries*/
 @media screen and (max-width: 450px) {
   #logo {
