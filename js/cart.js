@@ -4,25 +4,25 @@ const products = [
     {
         name: "Peper",
         tag: "peper",
-        price: 15,
+        price: 5,
         inCart: 0
     },
     {
         name: "Apple",
         tag: "apple",
-        price: 10,
+        price: 3,
         inCart: 0
     },
     {
-        name: "Green Beans",
-        tag: "greenbeans",
-        price: 5,
+        name: "Chili",
+        tag: "chili",
+        price: 8,
         inCart: 0
     },
     {
         name: "Juice",
         tag: "juice",
-        price: 20,
+        price: 8,
         inCart: 0
     }
 ];
@@ -104,7 +104,7 @@ const displayCart = () => {
     const cartCost = parseInt(localStorage.getItem("totalCost"));
     const productContainer = document.querySelector('.products');
 
-    if (productContainer) {
+        if(productContainer) {
         productContainer.innerHTML = `
             <div class="empty-cart mt-4 text-center">
                 <h5>You don't have any items in your cart.</h5>
@@ -140,7 +140,7 @@ const displayCart = () => {
                     Your Total
                     </br></br>
                     $${cartCost},00
-                </h4>`
+                </h4>`;
             deleteButtons();
             manageQuantity();
         }
