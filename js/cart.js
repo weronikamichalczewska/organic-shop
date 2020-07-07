@@ -108,7 +108,7 @@ const displayCart = () => {
         productContainer.innerHTML = `
             <div class="empty-cart mt-4 text-center">
                 <h5>You don't have any items in your cart.</h5>
-                <a href="index.html#shopnow"><button class="mt-4 empty-cart-btn">Start shopping</button></a>
+                <a href="/index.html#shopnow"><button class="mt-4 empty-cart-btn">Start shopping</button></a>
             </div>
         `;
 
@@ -118,7 +118,7 @@ const displayCart = () => {
             productContainer.innerHTML += `
             <div class="product col-xs-3 col-xs-pd">
                 <i class="fas fa-trash-alt remove-item"></i>
-                <img src="./images/${item.tag}.jpg">
+                <img src="../assets/products/${item.tag}.jpg">
                 <span class="mr-4">${item.name}</span>
             </div>
             <div class="price col-xs-3 col-xs-pd">$${item.price},00</div>
@@ -175,10 +175,11 @@ const manageQuantity = () => {
             currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
             currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
             cartItems[currentProduct].inCart += 1;
+
             cartNumbers(cartItems[currentProduct]);
             totalCost(cartItems[currentProduct]);
-            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 
+            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
             displayCart();
         });
     }
